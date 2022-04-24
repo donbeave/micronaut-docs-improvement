@@ -142,6 +142,7 @@ a:hover,
 
 #main {
     margin: 0 !important;
+    border: 0;
 }
 
 #main a {
@@ -426,4 +427,55 @@ html .dark-mode, body.dark-mode, .dark-mode #main, .dark-mode .docs-content {
 .dark-mode * {
     scrollbar-color: #555 rgba(0, 0, 0, 0.3);
     scrollbar-width: thin;
+}
+
+@media only screen and (max-width: 820px) {
+    /* For mobile phones: */
+    #main {
+        border: 0;
+        padding: 0 !important;
+    }
+
+    #table-of-content {
+        margin-top: 50px;
+    }
+
+    .toc-content {
+        padding-left: 20px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    code {
+        word-break: break-word;
+    }
+
+    .contribute-btn {
+        bottom: auto;
+        float: none;
+        right: auto;
+        position: unset;
+        margin-bottom: 7px;
+    }
+
+    .contribute-btn .btn {
+        font-size: 11px;
+        padding: 4px 9px;
+    }
+
+    .note {
+        width: auto;
+    }
+
+    h1 {
+        margin-bottom: 0.1em;
+    }
+
+    .listingblock > div {
+        overflow: hidden;
+    }
 }
